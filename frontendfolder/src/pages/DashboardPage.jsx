@@ -42,9 +42,17 @@ const DashboardPage = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-      </div>
+      <div className="min-h-screen flex flex-col items-center justify-center bg-slate-50 space-y-4">
+  <div className="bg-[#fff3cd] text-[#856404] p-3 rounded-lg border border-[#ffeaa7] max-w-md text-center">
+    The server may take up to 50 seconds to respond on your first request
+    because it’s hosted on a free Render instance that “sleeps” when idle.
+    After the first response, everything will run fast and smoothly.
+    Thanks for your patience!
+  </div>
+
+  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+</div>
+
     );
   }
 
