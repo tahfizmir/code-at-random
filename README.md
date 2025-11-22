@@ -16,6 +16,8 @@ cd frontendfolder -> npm install -> npm run dev -> navigate to http://localhost:
 
 API endpoints
 
+base url: http://localhost:5000
+
 post('/skill-gap')
 post('/roadmap')
 get('/news')
