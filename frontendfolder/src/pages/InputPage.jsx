@@ -5,13 +5,32 @@ import { ArrowRight, Code2, Sparkles } from 'lucide-react';
 const InputPage = () => {
   const [role, setRole] = useState('Frontend Developer');
   const [skills, setSkills] = useState('');
+  const [roleError, setRoleError] = useState('');
+  const [skillsError, setSkillsError] = useState('');
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (role && skills) {
-      navigate('/dashboard', { state: { role, skills } });
+
+    let valid = true;
+
+    if (!role) {
+      setRoleError('Please select a role.');
+      valid = false;
+    } else {
+      setRoleError('');
     }
+
+    if (!skills.trim()) {
+      setSkillsError('Please enter at least one skill.');
+      valid = false;
+    } else {
+      setSkillsError('');
+    }
+
+    if (!valid) return;
+
+    navigate('/dashboard', { state: { role, skills } });
   };
 
   return (
@@ -39,8 +58,9 @@ const InputPage = () => {
                 <select
                   value={role}
                   onChange={(e) => setRole(e.target.value)}
-                  className="input-field appearance-none bg-white"
+                  className={`input-field appearance-none bg-white ${roleError ? 'border-red-500' : ''}`}
                 >
+                  <option value="">Select a role</option>
                   <option value="Frontend Developer">Frontend Developer</option>
                   <option value="Backend Developer">Backend Developer</option>
                   <option value="Full Stack Developer">Full Stack Developer</option>
@@ -49,8 +69,10 @@ const InputPage = () => {
                   <Code2 className="w-5 h-5" />
                 </div>
               </div>
+              {roleError && <p className="text-red-500 text-sm mt-1">{roleError}</p>}
             </div>
 
+         
             <div>
               <label className="block text-sm font-semibold text-slate-700 mb-2">
                 Current Skills
@@ -59,14 +81,18 @@ const InputPage = () => {
                 value={skills}
                 onChange={(e) => setSkills(e.target.value)}
                 placeholder="e.g. HTML, CSS, JavaScript, React..."
-                className="input-field min-h-[120px] resize-none"
+                className={`input-field min-h-[120px] resize-none ${skillsError ? 'border-red-500' : ''}`}
               />
               <p className="mt-2 text-sm text-slate-500">
                 Separate skills with commas.
               </p>
+              {skillsError && <p className="text-red-500 text-sm mt-1">{skillsError}</p>}
             </div>
 
-            <button type="submit" className="btn-primary w-full flex items-center justify-center gap-2 group">
+            <button
+              type="submit"
+              className="btn-primary w-full flex items-center justify-center gap-2 group"
+            >
               Analyze My Career Path
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
