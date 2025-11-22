@@ -1,0 +1,121 @@
+{
+    "Frontend Developer": {
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Tailwind CSS",
+            "Git"
+        ],
+        "roadmap": [
+            {
+                "phase": "Phase 1: The Foundation",
+                "description": "Master the basics of the web. Build static sites and understand how the browser works.",
+                "topics": [
+                    "HTML5 Semantic Elements",
+                    "CSS Box Model & Flexbox",
+                    "JavaScript ES6+ Syntax"
+                ]
+            },
+            {
+                "phase": "Phase 2: Modern Frontend",
+                "description": "Learn a modern framework and state management. Build dynamic single-page applications.",
+                "topics": [
+                    "React Components & Hooks",
+                    "State Management (Context/Redux)",
+                    "API Integration (Axios/Fetch)"
+                ]
+            },
+            {
+                "phase": "Phase 3: Professional Polish",
+                "description": "Focus on performance, testing, and deployment. Get ready for the job market.",
+                "topics": [
+                    "Unit Testing (Jest/Vitest)",
+                    "Performance Optimization",
+                    "CI/CD & Deployment"
+                ]
+            }
+        ]
+    },
+    "Backend Developer": {
+        "skills": [
+            "Node.js",
+            "Express",
+            "Database (SQL/NoSQL)",
+            "API Design",
+            "Authentication",
+            "Git"
+        ],
+        "roadmap": [
+            {
+                "phase": "Phase 1: Server Side Basics",
+                "description": "Understand how servers work, handle requests, and serve responses.",
+                "topics": [
+                    "Node.js Runtime",
+                    "Express.js Routing",
+                    "REST API Principles"
+                ]
+            },
+            {
+                "phase": "Phase 2: Data & Security",
+                "description": "Work with databases and secure your applications.",
+                "topics": [
+                    "Database Design (SQL/Mongo)",
+                    "Authentication (JWT/OAuth)",
+                    "Input Validation"
+                ]
+            },
+            {
+                "phase": "Phase 3: Scale & Deploy",
+                "description": "Build robust, scalable systems and deploy them to the cloud.",
+                "topics": [
+                    "Microservices Architecture",
+                    "Caching (Redis)",
+                    "Docker & Kubernetes"
+                ]
+            }
+        ]
+    },
+    "Full Stack Developer": {
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Node.js",
+            "Express",
+            "Database",
+            "Git"
+        ],
+        "roadmap": [
+            {
+                "phase": "Phase 1: Frontend Focus",
+                "description": "Start with the user interface and client-side logic.",
+                "topics": [
+                    "HTML/CSS/JS",
+                    "React & State",
+                    "Responsive Design"
+                ]
+            },
+            {
+                "phase": "Phase 2: Backend Integration",
+                "description": "Connect your frontend to a server and database.",
+                "topics": [
+                    "Node.js & Express",
+                    "API Development",
+                    "Database Integration"
+                ]
+            },
+            {
+                "phase": "Phase 3: DevOps & Architecture",
+                "description": "Manage the full lifecycle of your application.",
+                "topics": [
+                    "Deployment Pipelines",
+                    "System Architecture",
+                    "Security Best Practices"
+                ]
+            }
+        ]
+    }
+}
