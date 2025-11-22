@@ -9,8 +9,6 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 
-import cors from "cors";
-
 app.use(
   cors({
     origin: ["https://your-frontend.vercel.app", "http://localhost:5173"],
