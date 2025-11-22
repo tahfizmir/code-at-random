@@ -63,7 +63,7 @@ const InputPage = () => {
                   <option value="">Select a role</option>
                   <option value="Frontend Developer">Frontend Developer</option>
                   <option value="Backend Developer">Backend Developer</option>
-                  <option value="Full Stack Developer">Full Stack Developer</option>
+                  <option value="Data Analyst">Data Analyst</option>
                 </select>
                 <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
                   <Code2 className="w-5 h-5" />

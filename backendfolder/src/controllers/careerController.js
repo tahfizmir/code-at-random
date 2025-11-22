@@ -10,7 +10,7 @@ exports.analyzeSkillGap = (req, res) => {
   const targetRole = rolesData[role];
 
   if (!targetRole) {
-    return res.status(404).json({ error: 'Role not found. Try "Frontend Developer", "Backend Developer", or "Full Stack Developer".' });
+    return res.status(404).json({ error: 'Role not found. Try "Frontend Developer", "Backend Developer", or "Data Analyst".' });
   }
 
   // Normalizing skills for comparison

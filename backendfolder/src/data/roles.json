@@ -1,13 +1,6 @@
 {
     "Frontend Developer": {
-        "skills": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React",
-            "Tailwind CSS",
-            "Git"
-        ],
+        "skills": ["HTML", "CSS", "JavaScript", "React", "Git"],
         "roadmap": [
             {
                 "phase": "Phase 1: The Foundation",
@@ -39,14 +32,7 @@
         ]
     },
     "Backend Developer": {
-        "skills": [
-            "Node.js",
-            "Express",
-            "Database (SQL/NoSQL)",
-            "API Design",
-            "Authentication",
-            "Git"
-        ],
+        "skills": ["Java", "Spring Boot", "SQL", "APIs", "Git"],
         "roadmap": [
             {
                 "phase": "Phase 1: Server Side Basics",
@@ -77,45 +63,38 @@
             }
         ]
     },
-    "Full Stack Developer": {
-        "skills": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React",
-            "Node.js",
-            "Express",
-            "Database",
-            "Git"
-        ],
+    "Data Analyst": {
+        "skills": ["Excel", "SQL", "Python", "Dashboards", "Statistics"],
         "roadmap": [
-            {
-                "phase": "Phase 1: Frontend Focus",
-                "description": "Start with the user interface and client-side logic.",
-                "topics": [
-                    "HTML/CSS/JS",
-                    "React & State",
-                    "Responsive Design"
-                ]
-            },
-            {
-                "phase": "Phase 2: Backend Integration",
-                "description": "Connect your frontend to a server and database.",
-                "topics": [
-                    "Node.js & Express",
-                    "API Development",
-                    "Database Integration"
-                ]
-            },
-            {
-                "phase": "Phase 3: DevOps & Architecture",
-                "description": "Manage the full lifecycle of your application.",
-                "topics": [
-                    "Deployment Pipelines",
-                    "System Architecture",
-                    "Security Best Practices"
-                ]
-            }
+    {
+        "phase": "Phase 1: Data Foundations",
+        "description": "Learn core concepts of data cleaning, exploration, and manipulation.",
+        "topics": [
+            "Excel / Sheets",
+            "SQL Basics",
+            "Python (Pandas, NumPy)"
         ]
+    },
+    {
+        "phase": "Phase 2: Visualization & Reporting",
+        "description": "Understand data storytelling and create visual insights.",
+        "topics": [
+            "Tableau / Power BI",
+            "Matplotlib / Seaborn",
+            "Dashboards & Reports"
+        ]
+    },
+    {
+        "phase": "Phase 3: Analytics & Business Insights",
+        "description": "Apply statistical thinking to solve business problems.",
+        "topics": [
+            "Descriptive & Inferential Statistics",
+            "A/B Testing",
+            "Business Metrics & KPIs"
+        ]
+    }
+]
+
+
     }
 }
