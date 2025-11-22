@@ -41,8 +41,9 @@ const InputPage = () => {
             <Sparkles className="w-8 h-8" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">
-            Career Path Analyzer
+            Career Path Analyzer 
           </h1>
+          <h5>by Mir Tahfiz  (tahfeezmir27@gmail.com)</h5>
           <p className="text-lg text-slate-600">
             Discover your skill gaps and get a personalized roadmap to your dream job.
           </p>
